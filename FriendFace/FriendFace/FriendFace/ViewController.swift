@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UITableViewController, UISearchResultsUpdating {
     var friends = [Friend]()
+    var filteredFriends = [Friend]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +33,7 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
                 
                 DispatchQueue.main.async {
                     self.friends = downloadedFriends
+                    self.filteredFriends = downloadedFriends
                     self.tableView.reloadData()
                 }
             } catch {
@@ -40,19 +42,25 @@ class ViewController: UITableViewController, UISearchResultsUpdating {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        navigationItem.searchController?.searchBar.becomeFirstResponder()
+    }
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return filteredFriends.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        let friend = friends[indexPath.row]
+        let friend = filteredFriends[indexPath.row]
         
         cell.textLabel?.text = friend.name
         cell.detailTextLabel?.text = friend.friends.map { $0.name }.joined(separator: ",")
         return cell
     }
     
+
     
 
 
