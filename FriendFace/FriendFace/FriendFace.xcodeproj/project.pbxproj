@@ -14,6 +14,8 @@
 		4B1357E722019760009F6A12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1357E522019760009F6A12 /* LaunchScreen.storyboard */; };
 		4B1357F222019760009F6A12 /* FriendFaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1357F122019760009F6A12 /* FriendFaceTests.swift */; };
 		4B1357FD22019760009F6A12 /* FriendFaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1357FC22019760009F6A12 /* FriendFaceUITests.swift */; };
+		4B13580B22019995009F6A12 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B13580A22019995009F6A12 /* Friend.swift */; };
+		4B13580D22019CB0009F6A12 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B13580C22019CB0009F6A12 /* Connection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		4B1357F822019760009F6A12 /* FriendFaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FriendFaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4B1357FC22019760009F6A12 /* FriendFaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFaceUITests.swift; sourceTree = "<group>"; };
 		4B1357FE22019760009F6A12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B13580A22019995009F6A12 /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		4B13580C22019CB0009F6A12 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				4B1357DC2201975E009F6A12 /* AppDelegate.swift */,
 				4B1357DE2201975E009F6A12 /* ViewController.swift */,
 				4B1357E02201975E009F6A12 /* Main.storyboard */,
+				4B13580A22019995009F6A12 /* Friend.swift */,
+				4B13580C22019CB0009F6A12 /* Connection.swift */,
 				4B1357E322019760009F6A12 /* Assets.xcassets */,
 				4B1357E522019760009F6A12 /* LaunchScreen.storyboard */,
 				4B1357E822019760009F6A12 /* Info.plist */,
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B13580B22019995009F6A12 /* Friend.swift in Sources */,
 				4B1357DF2201975E009F6A12 /* ViewController.swift in Sources */,
 				4B1357DD2201975E009F6A12 /* AppDelegate.swift in Sources */,
+				4B13580D22019CB0009F6A12 /* Connection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
